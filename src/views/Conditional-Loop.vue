@@ -12,9 +12,16 @@
       <div v-if="products.length > 10">
         {{ products.length }}
       </div>
-      <ul>
-        <li v-for="item in products" :key="item.id">{{ item.id }} - {{ item.title }} - {{ item.price }}</li>
-      </ul>
+      <div v-else>
+        <ul>
+          <li v-for="item in products" :key="item.id">{{ item.id }} - {{ item.title }} - {{ item.price }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <p>membuat looping for dengan atribut contoh v-for="variable in data" :key="variable.id"</p>
+      <p>membuat kondisi if else elseif dengan atribut v-if v-else v-else-if contoh v-if="argument" v-else-if="product.length > 100"</p>
     </div>
   </div>
 </template>

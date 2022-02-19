@@ -5,6 +5,8 @@ import DataMethod from "../views/Data-Method.vue";
 import DataBinding from "@/views/Data-Binding.vue";
 import TwoWayDataBinding from "@/views/Two-Way-Data-Binding.vue";
 import ConditionalLoop from "@/views/Conditional-Loop.vue";
+import LifecycleHooks from "@/views/Life-Cycle-Hooks.vue";
+import computedProperties from "@/views/Computed-Properties.vue";
 
 Vue.use(VueRouter);
 
@@ -37,6 +39,18 @@ const routes = [
     path: "/conditionals-loop",
     name: "Conditional & Loop",
     component: ConditionalLoop,
+  },
+
+  {
+    path: "/lifecycle-hooks",
+    name: "Life Cycle Hooks",
+    component: LifecycleHooks,
+  },
+
+  {
+    path: "/computed-properties",
+    name: "Computed Properties",
+    component: computedProperties,
   },
 
   {
